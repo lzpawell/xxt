@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="address"
+            type="bid.xiaocha.xxt.model.AddressEntity"/>
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_address"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_background"
+    android:padding="10dp">
+    <TextView
+        android:text='@{@string/place+address.place}'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@{@string/username+address.userName}'
+        android:layout_marginRight="10sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@{@string/phone+address.phone}'
+        android:layout_marginLeft="10sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

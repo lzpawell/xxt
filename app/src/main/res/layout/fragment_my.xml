@@ -1,0 +1,259 @@
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bid.xiaocha.xxt.ui.fragment.MyFragment"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/toolbarTextColor"
+            android:textSize="@dimen/toolbarTextSize"
+            android:text="个人"/>
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_background"
+    >
+    <LinearLayout
+        android:id="@+id/ly_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="@dimen/myLayoutPadding">
+
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_head"
+            android:layout_width="50dp"
+            android:layout_weight="0"
+            android:layout_height="50dp"
+            android:src="@mipmap/head2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/myGoinIconWidth"
+        android:layout_height="@dimen/myGoinIconHeight"
+        android:layout_marginRight="@dimen/myGoinIconMargin"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+         android:background="@mipmap/go_in2"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15sp"
+        android:background="@color/colorSpliter"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ly_wallet"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/myLayoutPadding"
+
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/purse"
+            android:layout_weight="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="钱包"
+            android:layout_marginLeft="@dimen/myLayoutPadding"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="@dimen/myGoinIconWidth"
+            android:layout_height="@dimen/myGoinIconHeight"
+            android:layout_marginRight="@dimen/myGoinIconMargin"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/go_in2"
+            android:layout_weight="0"/>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/myLayoutPadding"
+
+        android:id="@+id/ly_show_address"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/address"
+            android:layout_weight="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="地址"
+            android:layout_marginLeft="@dimen/myLayoutPadding"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="@dimen/myGoinIconWidth"
+            android:layout_height="@dimen/myGoinIconHeight"
+            android:layout_marginRight="@dimen/myGoinIconMargin"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/go_in2"
+            android:layout_weight="0"/>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ly_collect"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/myLayoutPadding"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/collection"
+            android:layout_weight="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收藏"
+            android:layout_marginLeft="@dimen/myLayoutPadding"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="@dimen/myGoinIconWidth"
+            android:layout_height="@dimen/myGoinIconHeight"
+            android:layout_marginRight="@dimen/myGoinIconMargin"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/go_in2"
+            android:layout_weight="0"/>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ly_setting"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/myLayoutPadding"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/settings"
+            android:layout_weight="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/myLayoutPadding"
+            android:text="设置"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="@dimen/myGoinIconWidth"
+            android:layout_height="@dimen/myGoinIconHeight"
+            android:layout_marginRight="@dimen/myGoinIconMargin"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@mipmap/go_in2"/>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSpliter" />
+
+</LinearLayout>
+</layout>

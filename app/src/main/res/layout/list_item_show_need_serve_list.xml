@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="needServe"
+            type="bid.xiaocha.xxt.model.NeedServeEntity"></variable>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_need_serve_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/title+needServe.title}" />
+
+            <TextView
+                android:id="@+id/tv_need_serve_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/content+needServe.content}" />
+
+            <TextView
+                android:id="@+id/tv_need_serve_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/price+needServe.price}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

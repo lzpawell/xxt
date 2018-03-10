@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "bid.xiaocha.xxt"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['/libs']
+        }
+    }
+    dataBinding.enabled = true
+}
+
+repositories {
+    jcenter()
+    maven { url 'https://www.jitpack.io' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':IMLib')
+    compile project(':IMKit')
+    //ConverterFactory的String依赖包
+    compile files('libs/BmobSMS_V1.2.2_20170303.jar')
+    //    compile files('libs/myRetrofit.jar')
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:3dmap:latest.integration'
+    //3D地图so及jar
+    //定位功能
+    //搜索功能
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    //    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.amap.api:3dmap:latest.integration'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.github.gittjy:LoadingDialog:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    implementation files('libs/converter-gson-2.4.0.jar')
+    implementation files('libs/converter-scalars-2.4.0.jar')
+    implementation files('libs/retrofit2_from_awell.jar')
+}

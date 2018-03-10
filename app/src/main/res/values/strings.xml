@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">xxt</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login_register">LoginRegisterActivity</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_need_serve">CreateNeedServeActivity</string>
+    <string name="title_activity_create_offer_serve">CreateOfferServeActivity</string>
+    <string name="title_activity_my_info">MyInfoActivity</string>
+    <string name="title_activity_show_or_choose_address">ShowOrChooseAddressActivity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">姓名：</string>
+    <string name="phone">电话：</string>
+    <string name="place">地址：</string>
+    <string name="price">价格：</string>
+    <string name="title">标题：</string>
+    <string name="content">内容：</string>
+    <string name="money">价格：</string>
+    <string name="title_activity_create_or_update_address">CreateOrUpdateAddressActivity</string>
+    <string name="title_activity_map_choose_address">MapChooseAddressActivity</string>
+    <string name="title_activity_show_need_serve">ShowNeedServeActivity</string>
+    <string name="title_activity_show_offer_serve">ShowOfferServeActivity</string>
+    <string name="title_activity_show_need_serve_detail">ShowNeedServeDetailActivity</string>
+    <string name="title_activity_need_serve_request">NeedServeRequestActivity</string>
+    <string name="title_activity_show_offer_serve_detail">ShowOfferServeDetailActivity</string>
+    <string name="title_activity_active_order_fragment">ActiveOrderFragment</string>
+    <string name="title_activity_end_order_fragment">EndOrderFragment</string>
+    <string name="title_activity_wait_comment_order_fragment">WaitCommentOrderFragment</string>
+    <string name="title_activity_show_order_detail">ShowOrderDetailActivity</string>
+    <string name="title_activity_my_need_serve_detail">MyNeedServeDetailActivity</string>
+    <string name="title_activity_my_offer_serve_detail">MyOfferServeDetailActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_show_user_info">ShowUserInfoActivity</string>
+    <string name="title_activity_address_search">AddressSearchActivity</string>
+    <string name="title_activity_show_personal_comment">ShowPersonalCommentActivity</string>
+    <string name="title_activity_show_all_serves_ofa_person">
+        ShowAllOfferServesOfaPersonActivity
+    </string>
+</resources>

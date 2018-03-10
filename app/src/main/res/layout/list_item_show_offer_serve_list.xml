@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="offerServe"
+            type="bid.xiaocha.xxt.model.OfferServeEntity"></variable>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_need_serve_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/title+offerServe.title}" />
+
+            <TextView
+                android:id="@+id/tv_need_serve_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/content+offerServe.content}" />
+
+            <TextView
+                android:id="@+id/tv_need_serve_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/price+offerServe.price}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

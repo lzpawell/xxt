@@ -1,0 +1,21 @@
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="bid.xiaocha.xxt.ui.fragment.MainFragment">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="他们需要你的帮助"
+            android:id="@+id/btn_show_need_serve"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="他们能为你提供的服务"
+            android:id="@+id/btn_show_offer_serve"/>
+
+    </LinearLayout>
+
+</layout>

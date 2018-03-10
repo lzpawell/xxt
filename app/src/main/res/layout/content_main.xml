@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="bid.xiaocha.xxt.ui.activity.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+
+        <FrameLayout
+            android:id="@+id/v_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorSpliter"></View>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ly_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/home_not_choose" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/menuTextSize"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="主页" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/order_not_choose"
+                    android:id="@+id/img_order"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/menuTextSize"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="订单"
+                    android:id="@+id/tv_order"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/chat_not_choose"
+                    android:id="@+id/img_chat"/>
+
+                <TextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聊天"
+                    android:textSize="@dimen/menuTextSize"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_service_manager"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_manager"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/manager_not_choose" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管理"
+                    android:id="@+id/tv_manager"
+                    android:textSize="@dimen/menuTextSize"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:id="@+id/img_my"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/my_not_choose" />
+
+                <TextView
+                    android:id="@+id/tv_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人"
+                    android:textSize="@dimen/menuTextSize"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

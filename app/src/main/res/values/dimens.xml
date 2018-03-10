@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbarTextSize">18sp</dimen>
+    <dimen name="menuTextSize">10sp</dimen>
+    <dimen name="myGoinIconHeight">15dp</dimen>
+    <dimen name="myGoinIconWidth">10dp</dimen>
+    <dimen name="myGoinIconMargin">10dp</dimen>
+    <dimen name="myLayoutPadding">10dp</dimen>
+    <dimen name="myLayoutTextPadding">10dp</dimen>
+</resources>

@@ -1,0 +1,29 @@
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="bid.xiaocha.xxt.ui.fragment.ChatFragment">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/toolbarTextColor"
+                android:text="聊天"
+                android:textSize="@dimen/toolbarTextSize"/>
+        </android.support.v7.widget.Toolbar>
+        <fragment
+            android:id="@+id/conversationlist"
+            android:name="io.rong.imkit.fragment.ConversationListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</layout>
